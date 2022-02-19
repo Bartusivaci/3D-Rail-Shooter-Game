@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float loadDelay = 1f;
+    [SerializeField] ParticleSystem deathVFX;
+
+    bool isDead = false;
 
     void OnTriggerEnter(Collider other)
     {
@@ -14,8 +17,13 @@ public class CollisionHandler : MonoBehaviour
 
     void ProcessDeath()
     {
+        if(isDead) { return; }
         GetComponent<PlayerController>().enabled = false;
+        deathVFX.Play();
+        GetComponent<MeshRenderer>().enabled = false;
+        isDead = true;
         Invoke("ReloadLevel", loadDelay);
+
     }
 
     void ReloadLevel()
