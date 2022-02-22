@@ -408,6 +408,7 @@ GameObject:
   - component: {fileID: 1304863126674773349}
   - component: {fileID: 3890891619970605487}
   - component: {fileID: -944055641489513723}
+  - component: {fileID: -6964205701661916184}
   m_Layer: 0
   m_Name: Red Enemy
   m_TagString: Untagged
@@ -491,11 +492,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4403f4c658a6ba24884eff3507368d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 8535878712943933840, guid: 25d6623c5c6dd1f4cbb3d07781d0219d, type: 3}
+  deathVFXAndSFX: {fileID: 8535878712943933840, guid: 25d6623c5c6dd1f4cbb3d07781d0219d, type: 3}
   hitVFX: {fileID: 8535878712943933840, guid: 623e8877745f6684db49e5110a7ef41b, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 55
   hitPoints: 3
+--- !u!65 &-6964205701661916184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3386642188003426426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.147294, y: 3.2459185, z: 10.599532}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5300287986691351381
 GameObject:
   m_ObjectHideFlags: 0

@@ -809,6 +809,7 @@ GameObject:
   - component: {fileID: 7980777966681019129}
   - component: {fileID: 7990592338835190551}
   - component: {fileID: -5137749274793255106}
+  - component: {fileID: -8666871325268880983}
   m_Layer: 0
   m_Name: Yellow Enemy
   m_TagString: Untagged
@@ -892,11 +893,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4403f4c658a6ba24884eff3507368d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 8535878712943933840, guid: 25d6623c5c6dd1f4cbb3d07781d0219d, type: 3}
+  deathVFXAndSFX: {fileID: 8535878712943933840, guid: 25d6623c5c6dd1f4cbb3d07781d0219d, type: 3}
   hitVFX: {fileID: 8535878712943933840, guid: 623e8877745f6684db49e5110a7ef41b, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 263
   hitPoints: 10
+--- !u!65 &-8666871325268880983
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7976972262241461099}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.945585, y: 1.4957151, z: 13.117715}
+  m_Center: {x: 0, y: -0.000007659197, z: 0}
 --- !u!1 &8630305890708527961
 GameObject:
   m_ObjectHideFlags: 0

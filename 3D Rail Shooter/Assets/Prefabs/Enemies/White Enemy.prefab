@@ -1173,6 +1173,7 @@ GameObject:
   - component: {fileID: 6118826193101366427}
   - component: {fileID: 6108684789331381389}
   - component: {fileID: -6955048284219600953}
+  - component: {fileID: 2242309988342507577}
   m_Layer: 0
   m_Name: White Enemy
   m_TagString: Untagged
@@ -1256,11 +1257,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4403f4c658a6ba24884eff3507368d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 8535878712943933840, guid: 25d6623c5c6dd1f4cbb3d07781d0219d, type: 3}
+  deathVFXAndSFX: {fileID: 8535878712943933840, guid: 25d6623c5c6dd1f4cbb3d07781d0219d, type: 3}
   hitVFX: {fileID: 8535878712943933840, guid: 623e8877745f6684db49e5110a7ef41b, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 178
   hitPoints: 8
+--- !u!65 &2242309988342507577
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6094513766790646577}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.745908, y: 2.880384, z: 13.023569}
+  m_Center: {x: 0, y: -0.000014603138, z: -0.0000023841858}
 --- !u!1 &6853867344280736363
 GameObject:
   m_ObjectHideFlags: 0

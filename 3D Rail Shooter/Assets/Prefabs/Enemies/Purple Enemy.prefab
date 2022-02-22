@@ -592,6 +592,7 @@ GameObject:
   - component: {fileID: 6833827104401136486}
   - component: {fileID: 8733138021808140204}
   - component: {fileID: -8656961974307937925}
+  - component: {fileID: -1412173992853011111}
   m_Layer: 0
   m_Name: Purple Enemy
   m_TagString: Untagged
@@ -675,11 +676,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4403f4c658a6ba24884eff3507368d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 8535878712943933840, guid: 25d6623c5c6dd1f4cbb3d07781d0219d, type: 3}
+  deathVFXAndSFX: {fileID: 8535878712943933840, guid: 25d6623c5c6dd1f4cbb3d07781d0219d, type: 3}
   hitVFX: {fileID: 8535878712943933840, guid: 623e8877745f6684db49e5110a7ef41b, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 35
   hitPoints: 5
+--- !u!65 &-1412173992853011111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075905648365096569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.291923, y: 3.1682885, z: 10.726942}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7144269055785881671
 GameObject:
   m_ObjectHideFlags: 0
