@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Drag the laser game objects.")]
     [SerializeField] GameObject[] lasers;
 
+    [Header("Laser SFX")]
+    [SerializeField] AudioClip laserSFX;
+
     [Header("Screen Position Based Tuning")]
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float positionYawFactor = 3f;
@@ -29,7 +32,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float rotationFactor = 5f;
 
     float horizontalMove, verticalMove;
+    AudioSource audioSource;
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -75,10 +83,16 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButton("Fire1"))
         {
             SetLasersActive(true);
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(laserSFX);
+            }
+            
         }
         else
         {
             SetLasersActive(false);
+            audioSource.Stop();
         }
     }
 
