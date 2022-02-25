@@ -24,7 +24,7 @@ Saving Gargantua is a 3D Rail Shooter game. Your goal is to hit as many enemy sh
 
 [<img src="https://cms.simmer.io/content/images/2019/08/simmer-badge-super-high-resolution-2.png" width=200px>](https://simmer.io/@bartu/saving-gargantua)
 
-[<img src="https://static.itch.io/images/badge.svg" width=200px>](https://bartusivaci.itch.io/space-trap)
+[<img src="https://static.itch.io/images/badge.svg" width=200px>](https://bartusivaci.itch.io/saving-gargantua)
 
 ## CREDITS:
 
